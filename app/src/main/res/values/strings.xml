@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BluetoothApp</string>
+    <string name="tv_bt_available">Bluetooth is available</string>
+    <string name="tv_bt_not_available">Bluetooth is not available</string>
+    <string name="bt_status_on">Already on</string>
+    <string name="bt_status_off">Already off</string>
+    <string name="bt_status_action_on">Bluetooth turn on</string>
+    <string name="bt_status_action_off">Bluetooth turned off</string>
+    <string name="bt_status_notice_on">Bluetooth is on</string>
+    <string name="bt_status_notice_off">Bluetooth is still off</string>
+    <string name="turnOn_btn">Turn On</string>
+    <string name="turnOff_btn">Turn Off</string>
+</resources>
