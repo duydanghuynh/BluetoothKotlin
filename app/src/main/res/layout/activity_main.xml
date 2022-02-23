@@ -22,7 +22,8 @@
         android:id="@+id/bluetoothImageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_bluetooth_off"/>
+        android:src="@drawable/ic_bluetooth_off"
+        android:contentDescription=""/>
     <Button
         android:id="@+id/turnOnButton"
         android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
         android:text="Turn Off"
         android:minWidth="200dp"/>
     <Button
-        android:id="@+id/pairingButton"
+        android:id="@+id/discoverableButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/Widget.AppCompat.Button.Colored"
