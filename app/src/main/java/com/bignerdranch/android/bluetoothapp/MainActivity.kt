@@ -65,13 +65,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    bluetoothStatusTextView = findViewById(R.id.bluetoothStatusTextView)
-    bluetoothImageView = findViewById(R.id.bluetoothImageView)
-    turnOnButton = findViewById(R.id.turnOnButton)
-    turnOffButton = findViewById(R.id.turnOffButton)
-    discoverableButton = findViewById(R.id.discoverableButton)
-    pairedButton = findViewById(R.id.pairedButton)
-    pairedDevicesTextView = findViewById(R.id.pairedDevicesTextView)
+        bluetoothStatusTextView = findViewById(R.id.bluetoothStatusTextView)
+        bluetoothImageView = findViewById(R.id.bluetoothImageView)
+        turnOnButton = findViewById(R.id.turnOnButton)
+        turnOffButton = findViewById(R.id.turnOffButton)
+        discoverableButton = findViewById(R.id.discoverableButton)
+        pairedButton = findViewById(R.id.pairedButton)
+        pairedDevicesTextView = findViewById(R.id.pairedDevicesTextView)
         //init bluetooth adapter
 //        var bluetoothManager = context.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
 //        bAdapter=BluetoothAdapter.getDefaultAdapter()
@@ -113,10 +113,10 @@ class MainActivity : AppCompatActivity() {
                     //                                          int[] grantResults)
                     // to handle the case where the user grants the permission. See the documentation
                     // for ActivityCompat#requestPermissions for more details.
-
+                    startActivityForResult(intent,REQUEST_CODE_ENABLE_BT)
+                    Toast.makeText(this, "Bluetooth is on", Toast.LENGTH_LONG).show()
                     return@setOnClickListener
                 }
-                startActivityForResult(intent,REQUEST_CODE_ENABLE_BT)
                 // Receiver
 //                val intent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
 //                var getResult =
